@@ -10,13 +10,17 @@ public class Cat extends Animal {
     }
 
     @Override
-    public String getVoice() {
+    protected String getVoice() {
         return "Meow";
     }
 
     @Override
-    public String move() {
-        return "Cat is running";
+    protected String move() {
+        return "run";
+    }
+
+    public void run() {
+        System.out.println("Cat is running");
     }
 
 }

@@ -10,13 +10,16 @@ public class Whale extends Animal {
     }
 
     @Override
-    public String getVoice() {
-        return "<whale singing>";
+    protected String getVoice() {
+        return "<singing>";
     }
 
     @Override
-    public String move() {
-        return "Whale is swimming";
+    protected String move() {
+        return "swim";
     }
 
+    public void swim() {
+        System.out.println("Whale is swimming");
+    }
 }

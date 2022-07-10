@@ -10,13 +10,16 @@ public class Bat extends Animal {
     }
 
     @Override
-    public String getVoice() {
+    protected String getVoice() {
         return "<ultrasound>";
     }
 
     @Override
-    public String move() {
-        return "Bat is flying";
+    protected String move() {
+        return "fly";
     }
 
+    public void fly() {
+        System.out.println("Bat is flying");
+    }
 }
